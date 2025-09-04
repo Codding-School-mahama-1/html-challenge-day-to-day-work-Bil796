@@ -1,9 +1,106 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>06 - Create a HTML form</title>
-  </head>
-  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Common HTML Form</title>
+</head>
+<body>
+  <h1>All Common HTML</h1>    
+   <fieldset>
+      <legend>Basic</legend>
+      Text (Name): <input type="text" name="fullname" placeholder="Full name"><br><br>
+      Email: <input type="email" name="email" placeholder="user@example.com"><br><br>
+      Password: <input type="password" name="password" placeholder="At least 8 characters"><br><br>
+      Telephone: <input type="tel" name="phone" placeholder="+250 7xx xxx xxx"><br><br>
+      Search: <input type="search" name="search" placeholder="Search term"><br><br>
+      URL: <input type="url" name="website" placeholder="https://example.com"><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Numbers & Sliders</legend>
+      Number: <input type="number" name="number" min="0" max="10"><br><br>
+      Range (0–10): <input type="range" name="range" min="0" max="10" value="5">
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Date & Time</legend>
+      Date: <input type="date" name="date"><br><br>
+      Time: <input type="time" name="time"><br><br>
+      Datetime (local): <input type="datetime-local" name="datetime"><br><br>
+      Month: <input type="month" name="month"><br><br>
+      Week: <input type="week" name="week"><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Choices</legend>
+      Radio (Plan): 
+      <input type="radio" name="plan" value="basic" checked> Basic
+      <input type="radio" name="plan" value="pro"> Pro
+      <input type="radio" name="plan" value="enterprise"> Enterprise
+      <br><br>
+      Checkboxes:
+      <input type="checkbox" name="subscribe"> Subscribe to updates
+      <input type="checkbox" name="terms"> I agree to the terms
+      <br><br>
+      Select (not input, but common):
+      <select name="choices">
+        <option>Choose…</option>
+        <option value="1">Choice 1</option>
+        <option value="2">Choice 2</option>
+        <option value="3">Choice 3</option>
+      </select>
+    </fieldset>
+
+    <br> 
+
+    <fieldset>
+      <legend>Text Areas & Datalists</legend>
+      Textarea:<br>
+      <textarea name="message" rows="4" cols="40" placeholder="Write something..."></textarea><br><br>
+  <input list="countries" name="country">
+      <datalist id="countries">
+        <option value="Rwanda">
+        <option value="Kenya">
+        <option value="Uganda">
+        <option value="Tanzania">
+      </datalist>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Color & Files</legend>
+      Color: <input type="color" name="color"><br><br>
+      File Upload: <input type="file" name="file">
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Hidden & Readonly</legend>
+      Read-only: <input type="text" value="INV-000123" readonly><br><br>
+      Disabled: <input type="text" value="Disabled example" disabled>
+    </fieldset>
+
+    <br>
+ 
+    <fieldset>
+      <legend>Buttons</legend>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+      <button type="button">Plain Button</button>
+    </fieldset>
+     </form>
+
+</body>
+</html>
+
     <!-- Add a form tag to your HTML page.  -->
     <!-- Inside the form tag, add a label tag and set the for attribute to a unique name for your input field.  -->
     <!-- Inside the label tag, add an input tag and set the type attribute to the type of input
